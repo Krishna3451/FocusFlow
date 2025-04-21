@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import MessageBubble, { TypingIndicator } from './MessageBubble';
 import { Message } from '../../context/MentorContext';
 import { v4 as uuidv4 } from 'uuid';
-import { useToast } from '@/hooks/use-toast';
+import { useToast } from '../../hooks/use-toast';
 
 // Direct Gemini API call
 async function askGemini(messages: Message[]): Promise<any> {
